@@ -1,0 +1,11 @@
+{
+  "name": "skit",
+  "version": "1.0.0",
+  "description": "Simplistic framework for quick prototyping",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Anes Hasicic <anes.hasicic@gmail.com>",
+  "license": "GNU"
+}
