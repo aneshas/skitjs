@@ -18,3 +18,8 @@ exports.mongo.connect = function(callback) {
     /* setup connection and set connect object */
     self.connection = null;
 };
+/* disconnect function (required) */
+exports.mongo.disconnect = function(callback) {
+    this.connection.close();
+    callback(true);
+};
