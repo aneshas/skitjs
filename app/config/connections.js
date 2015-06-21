@@ -2,7 +2,6 @@
  * skit connectins
  * @author Anes Hasicic
  */
-
 var exports = module.exports = {};
 
 /* Example mongo connection */
@@ -11,15 +10,21 @@ exports.mongo = {};
 /* connection object (required) */
 exports.mongo.connection = null;
 /* connect function (required) */
-exports.mongo.connect = function(callback) {
+exports.mongo.connect = function(app) {
     var self = this;
+    var Promise = app.Promise;
 
-    callback(null, self.connection);
     /* setup connection and set connect object */
     self.connection = null;
+
+    return new Promise(function(resolve, reject) {
+        resolve();
+        // reject("err");
+    });
 };
 /* disconnect function (required) */
-exports.mongo.disconnect = function(callback) {
+exports.mongo.disconnect = function(app) {
     this.connection.close();
-    callback(true);
+
+    // Return promise
 };

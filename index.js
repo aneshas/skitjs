@@ -1,8 +1,10 @@
 var SkitApp = require("./lib/core/SkitApp.js");
-var SetupRoutes = require("./app/config/routes.js");
+var Routes = require("./app/config/routes.js");
+var logger = require("./app/config/logger.js");
 
-var app = SkitApp();
+var app = new SkitApp();
 
 app.run();
 
-SetupRoutes(app);
+app.logger.log("Configuring routes...");
+Routes(app);
