@@ -9,6 +9,7 @@
   "author": "Anes Hasicic <anes.hasicic@gmail.com>",
   "license": "GNU",
   "dependencies": {
-    "bluebird": "^2.9.30"
+    "bluebird": "^2.9.30",
+    "winston": "^1.0.0"
   }
 }
