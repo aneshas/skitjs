@@ -2,5 +2,6 @@ module.exports = exports = {};
 
 exports.foo = "testVendorFn";
 
-/* Example */
+/* Examples */
 /* exports.hapy = require("hapy"); */
+/* exports.httpServer = require("http").createServer(handler) */
